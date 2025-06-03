@@ -11,9 +11,10 @@ html\
 javascript\
 python
 ### final product draft:
-
+***
 ![wendys nightlight app draft image](https://github.com/user-attachments/assets/3424f94c-e307-4851-9bac-ef07b2be5ae5)
 
+***
  authors
  W.D
  S.S
