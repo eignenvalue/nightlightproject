@@ -16,7 +16,7 @@ python
 
 ***
  authors
- W.D/
+ W.D\
  S.S
 
 
