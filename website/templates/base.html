@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/style.css') }}">
+
+<script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+</head>
+<body>
+<h1>Welcome to the Moonbean Webapp!</h1>
+<img class="bean" src="static/moonbean.jpg" alt="temp" width="300" />
+
+</body>
+ <div class = "brightnesslider">
+  <h2>BRIGHTNESS</h2>
+   <input type="range" min="0" max="10" value="5" class='Slider' id="Slider">
+   <p>value:<span id="brightnessValue"></span></p>
+  
+  </div>
+
+  <div class ="timer">
+    <h2>Timer duration</h2>
+   
+    <input class=durationinput type="stringformat" id="timerInput" min="0" max="60" value="15" size="1">
+    <p>value:<span id="durationValue"></span></p>
+  
+
+  </div>
+ 
+
+</html>
