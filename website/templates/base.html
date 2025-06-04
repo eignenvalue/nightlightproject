@@ -2,8 +2,11 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width-height, initial-scale=1.0" />
-    <meta name="theme-color" content="transparent" />
+    <meta
+      name="viewport"
+      content="width=device-width-height, initial-scale=1.0"
+    />
+    <meta name="theme-color" content="#000000" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
     <link
@@ -16,37 +19,43 @@
   </head>
   <body>
     <style>
-    body{
-     background-image: url("{{ url_for('static', filename='pushed_down.png') }}" );
-     background-size: 100% 100%;
-     background-repeat: no-repeat;
-     background-attachment: fixed;
-     background-position: bottom;
-    }
-  </style>
-    
+      body {
+        background-image: url("{{ url_for('static', filename='pushed_down.png') }}");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: bottom;
+      }
+    </style>
+
     <!--<img class="bean" src="static/moonbean.jpg" alt="temp" width="300" />-->
 
     <div class="brightnesslider">
-    <h2>BRIGHTNESS</h2>
-    <input type="range" min="0" max="10" value="5" class="Slider" id="Slider" />
-    <p>value:<span id="brightnessValue"></span></p>
-  </div>
+      <h2>BRIGHTNESS</h2>
+      <input
+        type="range"
+        min="0"
+        max="10"
+        value="5"
+        class="Slider"
+        id="Slider"
+      />
+      <p>value:<span id="brightnessValue"></span></p>
+    </div>
 
-  <div class="timer">
-    <h2>Timer duration</h2>
+    <div class="timer">
+      <h2>Timer duration</h2>
 
-    <input
-      class="durationinput"
-      type="stringformat"
-      id="timerInput"
-      min="0"
-      max="60"
-      value="15"
-      size="1"
-    />
-    <p>value:<span id="durationValue"></span></p>
-  </div>
+      <input
+        class="durationinput"
+        type="stringformat"
+        id="timerInput"
+        min="0"
+        max="60"
+        value="15"
+        size="1"
+      />
+      <p>value:<span id="durationValue"></span></p>
+    </div>
   </body>
-  
 </html>
