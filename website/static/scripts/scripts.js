@@ -13,4 +13,8 @@ document.addEventListener("DOMContentLoaded", function () {
   timerInput.oninput = function () {
     outputDuration.innerHTML = this.value;
   };
+
+  getWindow().setNavigationBarContrastEnforced(false);
+  getWindow().setNavigationBarColor(this.bgColor.TRANSPARENT);
+  getWindow().setStatusBarColor(this.bgColor.TRANSPARENT);
 });
