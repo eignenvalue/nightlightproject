@@ -6,14 +6,17 @@
       name="viewport"
       content="width=device-width-height, initial-scale=1.0"
     />
-    <meta name="theme-color" content="#000000" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="translucent" />
+    <meta name="theme-color" content="#f9b6cf" />
+
     <link
       rel="stylesheet"
       type="text/css"
       href="{{ url_for('static',filename='styles/style.css') }}"
     />
+    <title>Moonbean</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+    </style>
 
     <script src="{{url_for('static', filename='scripts/scripts.js')}}"></script>
   </head>
@@ -31,16 +34,19 @@
     <!--<img class="bean" src="static/moonbean.jpg" alt="temp" width="300" />-->
 
     <div class="brightnesslider">
-      <h2>BRIGHTNESS</h2>
-      <input
-        type="range"
-        min="0"
-        max="10"
-        value="5"
-        class="Slider"
-        id="Slider"
-      />
-      <p>value:<span id="brightnessValue"></span></p>
+      <div class="brightnesstext">BRIGHTNESS</div>
+      <div class="sliderc">
+        <input
+          class="sliderinput"
+          type="range"
+          min="0"
+          max="10"
+          value="5"
+          class="Slider"
+          id="Slider"
+        />
+        <p>value:<span id="brightnessValue"></span></p>
+      </div>
     </div>
 
     <div class="timer">
@@ -48,7 +54,8 @@
 
       <input
         class="durationinput"
-        type="stringformat"
+        type="number"
+        inputmode="numeric"
         id="timerInput"
         min="0"
         max="60"

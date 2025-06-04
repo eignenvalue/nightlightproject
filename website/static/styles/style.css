@@ -1,19 +1,173 @@
-.bean {
-    border-radius: 25px;
-}
 
 .Slider{
 cursor: pointer;
 
 }
 
-.durationipnut {
-    width: 50px;
+.durationinput {
+    width: 80px;
+    height: 56px;
+    font-size: 2.5rem;
+    text-align: center;
+    background: #f9b6cf;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 #7d4a6e;
+    font-family: "Press Start 2P", system-ui;
+    color: #7d4a6e;
+    margin: 0 auto 20px auto;
+    display: block;
+    outline: none;
+    image-rendering: pixelated;
+    transition: box-shadow 0.1s;
 }
 
-.body{
+.durationinput:focus {
+    box-shadow: 0 0 0 4px #ffe3f0, 3px 3px 0 #7d4a6e;
+    background: #ffe3f0;
+}
+
+body{
     margin-bottom: 0px;
-    
+
 
 }
 
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+
+.brightnesstext{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    color: #7d4a6e
+}
+
+.brightnesslider{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    color: #7d4a6e
+}
+
+.timer{
+    font-size: 25px;
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    color: #7d4a6e
+}
+
+.sliderc{
+    margin:auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.sliderinput {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 32px;
+    background: transparent;
+    margin: 20px auto 0 auto;
+    display: block;
+    position: relative;
+}
+
+/* Track */
+.sliderinput::-webkit-slider-runnable-track {
+    height: 24px;
+    background: #f9b6cf;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 #7d4a6e;
+    position: relative;
+    /* Dots for steps */
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0 9%,
+        #7d4a6e 9% 10%,
+        transparent 10% 100%
+    );
+    background-size: 10% 100%;
+}
+.sliderinput::-moz-range-track {
+    height: 24px;
+    background: #f9b6cf;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 3px 3px 0 #7d4a6e;
+    background-image: repeating-linear-gradient(
+        to right,
+        transparent 0 9%,
+        #7d4a6e 9% 10%,
+        transparent 10% 100%
+    );
+    background-size: 10% 100%;
+}
+.sliderinput::-ms-fill-lower,
+.sliderinput::-ms-fill-upper {
+    background: #f9b6cf;
+    border-radius: 0;
+}
+
+/* Thumb */
+.sliderinput::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 2px 2px 0 #7d4a6e;
+    cursor: pointer;
+    margin-top: -8px;
+    image-rendering: pixelated;
+}
+.sliderinput::-moz-range-thumb {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 2px 2px 0 #7d4a6e;
+    cursor: pointer;
+    image-rendering: pixelated;
+}
+.sliderinput::-ms-thumb {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border: 4px solid #7d4a6e;
+    border-radius: 0;
+    box-shadow: 2px 2px 0 #7d4a6e;
+    cursor: pointer;
+    image-rendering: pixelated;
+}
+
+/* Remove outline */
+.sliderinput:focus {
+    outline: none;
+}
+
+/* Hide the default outline in Firefox */
+.sliderinput::-moz-focus-outer {
+    border: 0;
+}
+
+/* For IE */
+.sliderinput::-ms-tooltip {
+    display: none;
+}
+.durationinput::-webkit-outer-spin-button,
+.durationinput::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.durationinput[type="number"] {
+    -moz-appearance: textfield;
+}

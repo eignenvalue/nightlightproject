@@ -6,6 +6,19 @@ document.addEventListener("DOMContentLoaded", function () {
     output.innerHTML = this.value;
   };
 
+  
+
+  document.getElementById("timerInput").addEventListener("input", function () {
+    let value = parseInt(this.value, 10);
+    if (isNaN(value)) {
+      this.value = "";
+    } else if (value > 60) {
+      this.value = 60;
+    } else if (value < 0) {
+      this.value = 0;
+    }
+  });
+
   var timerInput = document.getElementById("timerInput");
   var outputDuration = document.getElementById("durationValue");
   outputDuration.innerHTML = timerInput.value;
