@@ -6,8 +6,8 @@ cursor: pointer;
 
 .durationinput {
     width: 80px;
-    height: 56px;
-    font-size: 2.5rem;
+    height: 40px;
+    font-size: 2.0rem;
     text-align: center;
     background: #f9b6cf;
     border: 4px solid #7d4a6e;
@@ -15,7 +15,7 @@ cursor: pointer;
     box-shadow: 3px 3px 0 #7d4a6e;
     font-family: "Press Start 2P", system-ui;
     color: #7d4a6e;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 0px auto;
     display: block;
     outline: none;
     image-rendering: pixelated;

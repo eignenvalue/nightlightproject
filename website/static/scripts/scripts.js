@@ -18,14 +18,17 @@ document.addEventListener("DOMContentLoaded", function () {
       this.value = 0;
     }
   });
+/// <summary>
 
-  var timerInput = document.getElementById("timerInput");
-  var outputDuration = document.getElementById("durationValue");
-  outputDuration.innerHTML = timerInput.value;
 
-  timerInput.oninput = function () {
-    outputDuration.innerHTML = this.value;
-  };
+  ///var timerInput = document.getElementById("timerInput");
+ /// var outputDuration = document.getElementById("durationValue");
+  ///outputDuration.innerHTML = timerInput.value;
+
+  ///timerInput.oninput = function () {
+    ///outputDuration.innerHTML = this.value;
+  ///};
+  /// </summary>
 
   getWindow().setNavigationBarContrastEnforced(false);
   getWindow().setNavigationBarColor(this.bgColor.TRANSPARENT);
