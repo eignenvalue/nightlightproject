@@ -16,8 +16,8 @@
 
 ***
 ## authors/contributors:
- W.D/
- S.S/
+ W.D\
+ S.S\
  J.W
 
 
