@@ -17,7 +17,7 @@
 ***
 ## authors/contributors:
  W.D\
- S.S\
+ S.S
  ## lead tester
  J.W
 
